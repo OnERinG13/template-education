@@ -1,13 +1,14 @@
-
 *{
 	margin: 0;
 	padding: 0;
 	font-family: shabnam;
 }
-html,body{
+html{
 	height: 100%;
+}
+body{
+    height: 100%;
 	overflow-x: hidden;
-
 }
 input:focus{
 	outline: none;
@@ -29,6 +30,27 @@ a{
 	left: 0;
 	z-index: 999999;
 	background: #fff;
+}
+
+.pencel-img{
+	position: absolute;
+	z-index: 999; 
+}
+
+.cloudimg{
+	float:right !important;
+	/* bottom:10px; */
+}
+
+.text-nav{
+	float:right;
+	color: black;
+}
+.text-nav li{
+	float: right;
+	top: 15px;
+	margin-left: 25px;
+	margin-right: 10px;
 }
 
 .loader {
@@ -91,7 +113,6 @@ a{
 /*header-section*/
 
 .gradientNavbar{
-	background: linear-gradient(149.8deg, rgba(94, 44, 129, 0.88) 10.5em, rgba(228, 228, 228, 0.35) 0%);
 	background-color: unset !important;
 	border: none !important;
 	border-radius: none !important;
@@ -170,6 +191,10 @@ a{
 .form-search i{
 	line-height: 28px;
 	font-size: 23px;
+    color: #f0f0f0;
+    background-color: #71459091;
+    padding: 3px 12px;
+    border-radius: 20px;
 }
 .input-search:focus{
 	box-shadow: 0 0 0 2px #E23131;
@@ -217,10 +242,30 @@ a{
 }
 /*end content header*/
 
+/*content*/
+.pencel{
+    top: 62.2em;
+    position: absolute;
+    width: 125px;
+    height: 70px;
+    background: linear-gradient(149.8deg, rgb(180, 111, 216) 4.2em, rgba(228, 228, 228, 0) 0%);
+}
+.sort-courses {
+	top: 62.2em;
+    position: absolute;
+    width: 100%;
+    height: 71px;
+    background: linear-gradient(149.8deg, rgba(255, 255, 255, 0) 4.2em, rgb(72, 39, 109) 0%);
+}
+/*end content*/
+
 @media (max-width: 767px){
 	.navbar-contents{
 		height: 8%;
 	}
+    .navbar-default .navbar-toggle {
+        border-color: #43217582 !important;
+    }
 	.responsive-icon-user{
 		display: block;
 		float: right;
@@ -239,6 +284,7 @@ a{
 	}
 	.form-search i{
 	    line-height: 30px;
+        background-color: #714590;
 	}
 	.brand-education{
 		line-height: 3.9em;
@@ -252,8 +298,14 @@ a{
 	.border-radius{
 		display: none;
 	}
-	.gradientNavbarlight{
-		background: linear-gradient(149.8deg, rgba(212, 211, 214, 0.86) 10.5em, rgba(228, 228, 228, 0.89) 0%);
+	.gradientNavbar{
+        background: linear-gradient(149.8deg, rgba(94, 44, 129, 0.88) 9.9em, rgba(228, 228, 228, 1) 0%) !important;
+		background-color: unset !important;
+		border: none !important;
+		border-radius: none !important;
+	}
+    .gradientNavbarlight{
+/*        background: linear-gradient(149.8deg, rgba(94, 44, 129, 0.88) 9.9em, rgba(228, 228, 228, 1) 0%) !important;*/
 		background-color: unset !important;
 		border: none !important;
 		border-radius: none !important;
@@ -266,8 +318,12 @@ a{
 	}
 
 	.laptopsvg{
-	    margin-top: 18em;
+	    margin-top: 14em;
 	}
+    .pencel,.sort-courses{
+        top: 38.6em;
+}
+
 /*	.navbar-nav li{
 		background-color: #361D70;
 	}
@@ -277,9 +333,10 @@ a{
 	}*/
 }
 @media (max-width: 425px){
+	
 
 	.laptopsvg{
-		margin-top: 27em;
+		margin-top: 12em;
 	}
 	.desctiption-title h5{
 		font-size: 12px;
@@ -295,5 +352,8 @@ a{
 	}
 	.navbar-contents{
 		height: 7%;
+	}
+	.cloudimg{
+		top: 15px;
 	}
 }
