@@ -85,7 +85,7 @@ a{
 
 @font-face{
 	font-family: 'shabnam';
-	src: url("../IRANSans.ttf");
+	src: url("../fonts/IRANSans.ttf");
 }
 
 /*header-section*/
@@ -204,11 +204,23 @@ a{
 	width: 92%;
     float: right;
     margin-right: -9%;
-    margin-top: 21em;
+    margin-top: 15em;
+}
+.navbar-contents{
+	margin-top: 60%;
+	background: #612f84;
+	background: -moz-linear-gradient(-45deg, #612f84 1%, #612f84 4%, #23176b 4%, #23176b 100%);
+	background: -webkit-linear-gradient(-45deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
+	background: linear-gradient(150deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#612f84', endColorstr='#23176b',GradientType=1 ); 
+	height:10%;
 }
 /*end content header*/
 
 @media (max-width: 767px){
+	.navbar-contents{
+		height: 8%;
+	}
 	.responsive-icon-user{
 		display: block;
 		float: right;
@@ -267,7 +279,7 @@ a{
 @media (max-width: 425px){
 
 	.laptopsvg{
-		margin-top: 15em;
+		margin-top: 27em;
 	}
 	.desctiption-title h5{
 		font-size: 12px;
@@ -280,5 +292,8 @@ a{
 		font-size: 17px;
 		width: 100%;
 
+	}
+	.navbar-contents{
+		height: 7%;
 	}
 }
