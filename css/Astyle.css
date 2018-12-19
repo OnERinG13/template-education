@@ -39,7 +39,7 @@ a{
 
 .cloudimg{
 	float:right !important;
-	/* bottom:10px; */
+	bottom:5px; 
 }
 
 .text-nav{
@@ -47,10 +47,9 @@ a{
 	color: black;
 }
 .text-nav li{
+	width: 150px;
 	float: right;
-	top: 15px;
-	margin-left: 25px;
-	margin-right: 10px;
+	top: 12px;
 }
 
 .loader {
@@ -260,6 +259,12 @@ a{
 /*end content*/
 
 @media (max-width: 767px){
+	.text-nav li{
+		width: 100px;
+	}
+	.cloudimg{
+		bottom: 8px; 
+	}
 	.navbar-contents{
 		height: 8%;
 	}
@@ -355,5 +360,10 @@ a{
 	}
 	.cloudimg{
 		top: 15px;
+	}
+	.text-nav li{
+		top: 15px;
+		width: 79px;
+		font-size: 10px;
 	}
 }
