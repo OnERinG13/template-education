@@ -1,4 +1,3 @@
-
 *{
 	margin: 0;
 	padding: 0;
@@ -31,6 +30,26 @@ a{
 	left: 0;
 	z-index: 999999;
 	background: #fff;
+}
+
+.pencel-img{
+	position: absolute;
+	z-index: 999; 
+}
+
+.cloudimg{
+	float:right !important;
+	bottom:5px; 
+}
+
+.text-nav{
+	float:right;
+	color: black;
+}
+.text-nav li{
+	width: 150px;
+	float: right;
+	top: 12px;
 }
 
 .loader {
@@ -87,7 +106,7 @@ a{
 
 @font-face{
 	font-family: 'shabnam';
-	src: url("../IRANSans.ttf");
+	src: url("../fonts/IRANSans.ttf");
 }
 
 /*header-section*/
@@ -209,7 +228,16 @@ a{
 	width: 92%;
     float: right;
     margin-right: -9%;
-    margin-top: 21em;
+    margin-top: 15em;
+}
+.navbar-contents{
+	margin-top: 60%;
+	background: #612f84;
+	background: -moz-linear-gradient(-45deg, #612f84 1%, #612f84 4%, #23176b 4%, #23176b 100%);
+	background: -webkit-linear-gradient(-45deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
+	background: linear-gradient(150deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#612f84', endColorstr='#23176b',GradientType=1 ); 
+	height:10%;
 }
 /*end content header*/
 
@@ -231,6 +259,15 @@ a{
 /*end content*/
 
 @media (max-width: 767px){
+	.text-nav li{
+		width: 100px;
+	}
+	.cloudimg{
+		bottom: 8px; 
+	}
+	.navbar-contents{
+		height: 8%;
+	}
     .navbar-default .navbar-toggle {
         border-color: #43217582 !important;
     }
@@ -291,6 +328,7 @@ a{
     .pencel,.sort-courses{
         top: 38.6em;
 }
+
 /*	.navbar-nav li{
 		background-color: #361D70;
 	}
@@ -300,9 +338,10 @@ a{
 	}*/
 }
 @media (max-width: 425px){
+	
 
 	.laptopsvg{
-		margin-top: 15em;
+		margin-top: 12em;
 	}
 	.desctiption-title h5{
 		font-size: 12px;
@@ -316,5 +355,15 @@ a{
 		width: 100%;
 
 	}
+	.navbar-contents{
+		height: 7%;
+	}
+	.cloudimg{
+		top: 15px;
+	}
+	.text-nav li{
+		top: 15px;
+		width: 79px;
+		font-size: 10px;
+	}
 }
-
