@@ -9,13 +9,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	</head>
 	<body>
-
-        <div>
-		<!--loader-->
-		<!--<div id="preloder">
-			<div class="loader"></div>
-		</div>-->
-
+  <div>
 		<!--header section-->
 		<nav class="navbar navbar-default gradientNavbar">
 			<div class="container-fluid">
@@ -23,15 +17,21 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#dropdown-menu">
 					<i class="fa fa-bars"></i>
-
 					</button>
 					<a href="#" class="user responsive-icon-user"><img src="img/boy.png" alt=""></a>
 					<a class="brand-education" href="#">
 						<img src="img/logo.png">
 					</a>
 				</div>
-				<form class="form-search">
-					<input class="input-search"><i class="fa fa-search"></i></form>
+
+				<!-- Search form -->
+				<form class="form-search" method="post" action="#" id="search-form">
+					<i class="fa fa-search" id="search-icon"></i>
+					<input class="input-search" id="input-search">
+					<input type="submit" id="submit-search">
+				</form>
+				<!-- end search form -->
+
 					<div class="collapse navbar-collapse" id="dropdown-menu">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">تماس با ما</a></li>
@@ -73,8 +73,7 @@
 			<img class="laptopsvg" src="img/laptop.png" alt="laptop">
 		</div>
 	</div>
-
-    </div>
+</div>
 	<!-- end content header -->
 	<!-- content navbar -->
 	<div class="pencel">
@@ -113,9 +112,11 @@
 		</ul>
 	</div>
 	<!-- end content navbar -->
+
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/myScript.js"></script>
 	<script src="./js/select.js"></script>
+	<script src="./js/Search.js" charset="utf-8"></script>
 </body>
 </html>
