@@ -19,13 +19,75 @@ li{
 a{
 	text-decoration: none;
 }
+.education-boxes{
+	position: relative;
+	top: 70em;
+	width: 100%;
+	padding: 0 40px;
+	margin-bottom: 150px;
+	height: 100px;
+}
+.education-boxes > div:nth-child(odd){
+	right: 10px;
+}
 
+.education-boxes > div:nth-child(even){
+	left: 10px;
+}
+.education-header-content{
+	line-height: 100px;
+}
+.education-header-content li {
+	float: left;
+	color: white;
+	margin: 0 5px;
+}
+.education-header{
+	height: 100px;
+	position: relative;
+	background-color: #5d3584;
+}
+.seprateline {
+	position: absolute;
+	width: 2px;
+	height: 65px;
+	background-color: white;
+	top: 20px;
+}
+.right-rectangle {
+	width: 100px;
+	height: 200px;
+	background: #5d3584;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.triangle {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	border-right: 100px solid #5d3584;
+	border-left: 0px solid transparent;
+	border-bottom: 100px solid transparent;
+
+}
+.bottom-rectangle {
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	z-index: -2;
+	box-shadow: 2px 12px 9px -5px #aaa;
+	border: 1px solid #5d3584;
+}
 /* Preloder */
 
 #preloder {
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	top: 0;
 	left: 0;
 	z-index: 999999;
@@ -264,13 +326,25 @@ a{
 .xs-background{
 		display: none;
 	}
-
+@media (max-width: 992px) {
+	.education-boxes{
+		margin-bottom: 225px;
+	}
+	.education-boxes .education-header{
+		right: 0px !important;
+		left: 0px !important;
+		margin-bottom: 120px;
+	}
+}
 @media (max-width: 873px) and (min-width: 768px){
 	#xs-address-courses li:nth-child(3),#xs-address-courses li:nth-child(4){
 		display: none;
 	}
 }
 @media (max-width: 767px){
+	.education-boxes{
+		top:50em;
+	}
 	.text-nav li{
 		width: 100px;
 	}
