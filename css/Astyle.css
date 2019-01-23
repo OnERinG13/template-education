@@ -19,12 +19,16 @@ li{
 a{
 	text-decoration: none;
 }
+.body-content{
+	position: absolute;
+	width: 100%;
+}
 #price button{
 	background-color: unset;
 	border-radius: 15px;
 	border-color: aqua;
 	padding: 5px;
-	top : 22px;
+	top : 30px;
 	position: relative;
 	color: #FF0099;
 }
@@ -41,16 +45,15 @@ a{
 }
 .education-time{
 	position: relative;
-	line-height: 80px;
 	margin-left: 10px;
 }
+
 .rating-stars ul {
   list-style-type:none;
   /* padding:0; */
-	float: left;
-	top: 30px;
+	top: 15px;
 	position: relative;
-
+	z-index: 999;
   -moz-user-select:none;
   -webkit-user-select:none;
 }
@@ -116,6 +119,7 @@ a{
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: -1;
 }
 .triangle {
 	position: absolute;
@@ -381,7 +385,22 @@ a{
 .xs-background{
 		display: none;
 	}
-@media (max-width: 992px) {
+@media (min-width: 1200px){
+	.education-time{
+		margin-left: 0;
+		top: 5px;
+	}
+	#price button{
+		top: 15px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	#price button{
+		top: unset;
+		bottom: 20px;
+	}
+}
+@media (max-width: 991px) {
 	.education-boxes{
 		margin-bottom: 225px;
 	}
@@ -396,9 +415,30 @@ a{
 		display: none;
 	}
 }
+
 @media (max-width: 767px){
+	.right-rectangle{
+		width: 80px;
+		height: 250px;
+	}
+	.bottom-rectangle{
+		height: 150px;
+	}
+	.triangle{
+		right: 80px;
+		border-right: 51px solid #5d3584;
+		border-bottom: 150px solid transparent;
+	}
+	.education-time{
+		top: 15px;
+		margin-left: 0px;
+		text-align: center;
+	}
 	.education-boxes{
 		top:50em;
+	}
+	.education-header{
+		margin-bottom: 220px !important;
 	}
 	.text-nav li{
 		width: 100px;
@@ -474,6 +514,24 @@ a{
 		top: 70%;
 	}
 }
+@media (max-width: 991px) and (min-width: 768px){
+	#price button{
+		top: 15px;
+	}
+	.education-time{
+		margin-left: 0px;
+		top: 5px;
+	}
+}
+@media (max-width: 550px) and (min-width: 426px){
+	.rating-stars ul{
+		float: left;
+	}
+	.education-time{
+		text-align: left;
+	}
+}
+
 .sort-courses-select{
 	color: white;
 	float: right;
@@ -502,6 +560,40 @@ a{
 	width: 10px;
 }
 @media (max-width: 425px){
+	#price{
+		text-align: center;
+	}
+	.rating-stars ul{
+		float: none;
+		top: 15px;
+	}
+	.education-time{
+		text-align: center;
+	}
+	.education-header{
+		padding: 0px !important;
+	}
+	.education-header-content >‌ li{
+		margin:0px;
+	}
+	.education-header-content > li:nth-child(3){
+		font-size: 10px;
+	}
+	.education-header-content > li:first-child > img{
+		width: 40px;
+	}
+	.education-boxes{
+		padding: 0px;
+	}
+	.right-rectangle{
+		display: none;
+	}
+	.bottom-rectangle{
+		height: 150px;
+	}
+	.triangle{
+		display: none;
+	}
 	.laptopsvg{
 		margin-top: 12em;
 	}
