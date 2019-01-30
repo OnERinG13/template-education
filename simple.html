@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>simple</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/Astyle.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	</head>
+	<body>
+
+        <div>
+		<!--loader-->
+		<!--<div id="preloder">
+			<div class="loader"></div>
+		</div>-->
+
+		<!--header section-->
+		<nav class="navbar navbar-default gradientNavbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#dropdown-menu">
+					<i class="fa fa-bars"></i>
+
+					</button>
+					<a href="#" class="user responsive-icon-user"><img src="img/boy.png" alt=""></a>
+					<a class="brand-education" href="#">
+						<img src="img/logo.png">
+					</a>
+				</div>
+				<form class="form-search">
+					<input class="input-search"><i class="fa fa-search"></i></form>
+					<div class="collapse navbar-collapse" id="dropdown-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">تماس با ما</a></li>
+							<li><a href="#">درباره ی ما</a></li>
+							<li><a href="#">آموزش ها</a>
+							<svg class="border-radius" width="100" height="50" style="position: absolute;top: 0;z-index: 0;">
+							<rect class="courses" x="1" y="8" rx="20" ry="20" width="85" height="35" style="fill: none;stroke: url(#gradient);stroke-width: 2px;opacity: 1;"></rect>
+							Sorry, your browser does not support inline SVG.
+							<defs>
+							<linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+								<stop offset="0%" stop-color="#954DE4"></stop>
+								<stop offset="100%" stop-color="#5eaefd"></stop>
+							</linearGradient>
+							</defs>
+						</svg>
+					</li>
+					<li><a href="#">صفحه ی اصلی</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end header section -->
+
+	<!-- content header -->
+	<div class="content-header">
+		<div class="course-title container-fluid">
+			<div class="col-lg-7 col-md-7 col-sm-6 col-xs-5 andImg" style="direction: rtl;">
+				<img src="img/android.png" alt="android" style="width: 150px;">
+			</div>
+			<h3 class="col-lg-5 col-md-5 col-sm-6 col-xs-7" style="color: #A3C439;line-height: 43px;    text-align: start;">آموزش برنامه نویسی اندروید</h3>
+			<div style="clear: both;"></div>
+			<div class="desctiption-title col-lg-push-6 col-md-push-6 col-sm-push-5 col-xs-12">
+				<h5 >سری آموزش های برنامه نویسی اندروید در محیط</h5>
+				<h5 style="margin-left: 9em;">Eclipse اندروید استادیو و </h5>
+			</div>
+		</div>
+		<div>
+			<img src="img/cloudpic.jpg" class="main-contentpic" alt="cloud">
+			<img class="laptopsvg" src="img/laptop.png" alt="laptop">
+		</div>
+	</div>
+
+    </div>
+	<!-- end content header -->
+	<!-- content navbar -->
+	<div class="pencel">
+		<a href="#" class="pencel-img">
+			<img class="col-lg-7 col-md-7 col-sm-7 col-xs-7" src="img/pencil.svg" alt="pencel">
+		</a>
+	</div>
+	<div class="sort-courses">
+		<div class="col-lg-2 col-md-1 col-sm-1 col-xs-2 cloudimg">
+			<img src="./img/cloud.svg" alt="cloud">
+		</div>
+		<ul class="col-lg-5 col-md-2 col-sm-2 col-xs-1 address-courses">
+			<li> صفحه اصلی </li>
+			<li> <i class="fa fa-angle-left"></i> </li>
+			<li> آموزش ها </li>
+			<li> <i class="fa fa-angle-left"></i> </li>
+			<li> برنامه نویسی اندروید </li>
+		</ul>
+		<div class="select-and-sort">
+		<ul class="col-lg-5 col-md-2 col-sm-2 col-xs-1 sort-courses-select">
+			<li>
+				<div class="custom-select" style="width:150px;">
+				<select name="sort">
+					<option> </option>
+					<option value="name" selected>نام آموزش</option>
+					<option value="time desc">تاریخ انتشار نزولی</option>
+					<option value="time asc">تاریخ انتشار صعودی</option>
+					<option value="price desc">قیمت نزولی</option>
+					<option value="price asc">قیمت صعودی</option>
+				</select>
+			</div>
+			</li>
+			<li><img src="./img/sort.svg" alt="sort" width="20" height="20"></li>
+			<li> <i class="fa fa-angle-right"></i> </li>
+			<li>مرتب کردن بر اساس</li>
+		</ul>
+	</div>
+	</div>
+	<!-- end content navbar -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myScript.js"></script>
+	<script src="./js/select.js"></script>
+</body>
+</html>

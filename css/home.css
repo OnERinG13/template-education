@@ -1,0 +1,75 @@
+.section1-titles{
+	font-family: shabnam;
+	text-align: center;
+	background-color: #f0f0f0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.section1-titles h2{
+	color: #ae00a6;
+	margin-bottom: 60px;
+}
+.section1-titles > div > img {
+	width: 80px;
+	padding-top: 10px;
+}
+.section1-titles > div > span {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.section1-titles .gilificon{
+	height: 200px;
+	margin-bottom: 15px;
+}
+.section1-titles .gilificon:hover {
+	background-color: #8400ff1a;
+	background-clip: content-box;
+}
+#title-categories {
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+	margin: 30px 30px 40px 30px;
+}
+#title-categories > div {
+	height: 50px;
+	border-bottom: 3px solid #d80027;
+	margin-left: 35px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+#title-categories > div > img {
+	width: 35px;
+	float: right;
+	margin-top: 7px;
+}
+#title-categories > div > span{
+	line-height: 50px;
+	transition: all .3s ease-in-out;
+}
+#title-categories > div:hover {
+	border-bottom: 50px solid #7a0099;
+}
+#title-categories > div:hover > span{
+	color: #fff;
+}
+.content-categories {
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+	margin: 0px 45px 0px 45px;
+}
+.content-categories > div {
+	background-clip: content-box;
+	margin-bottom: 30px;
+}
+.content-categories > div > img{
+	max-width: 400px;
+}
+.father-caterories{
+	position: relative;
+}

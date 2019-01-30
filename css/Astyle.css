@@ -247,6 +247,10 @@ a{
 .cloudimg{
 	width: 100px !important;
 	float:right !important;
+<<<<<<< HEAD
+	bottom:5px;
+=======
+>>>>>>> 82cac6be1baa2caca2aad2c3a99ad4f05bdc4148
 }
 
 .text-nav{
@@ -534,7 +538,11 @@ a{
 		width: 100px;
 	}
 	.cloudimg{
+<<<<<<< HEAD
+		bottom: 8px;
+=======
 		display: none;
+>>>>>>> 82cac6be1baa2caca2aad2c3a99ad4f05bdc4148
 	}
 	.navbar-contents{
 		height: 8%;
@@ -597,6 +605,38 @@ a{
     .pencel,.sort-courses{
         top: 38.6em;
 }
+<<<<<<< HEAD
+}
+.sort-courses-select{
+	color: white;
+	float: right;
+	line-height: 30px;
+	top: 25%;
+	padding-top: 15px;
+}
+.sort-courses-select li{
+	padding: 7px;
+	color: aqua;
+	float: right;
+}
+.address-courses{
+	top: 25%;
+	float: right !important;
+}
+.address-courses li{
+	color: #aaa;
+	padding: 5px;
+	display: inline-block;
+	float: right;
+}
+.address-courses li:last-child{
+	color: #A3C439;
+}
+.address-courses li i{
+	width: 10px;
+}
+@media (max-width: 425px){
+=======
 	.xs-background{
 		display: block;
 	}
@@ -684,6 +724,7 @@ a{
 	.triangle{
 		display: none;
 	}
+>>>>>>> 82cac6be1baa2caca2aad2c3a99ad4f05bdc4148
 	.laptopsvg{
 		margin-top: 12em;
 	}
@@ -711,6 +752,8 @@ a{
 		font-size: 10px;
 	}
 }
+<<<<<<< HEAD
+=======
 @media (max-width: 405px){
 	.address-courses{
 		top: 10%;
@@ -722,6 +765,7 @@ a{
 		display: none;
 	}
 }
+>>>>>>> 82cac6be1baa2caca2aad2c3a99ad4f05bdc4148
 /* custome select */
 .custom-select {
   position: relative;
@@ -729,8 +773,11 @@ a{
   width: 150px;
   border: 1px solid #03f2f7;
   border-radius: 7px;
+<<<<<<< HEAD
+=======
   line-height: 22px;
 	z-index: 999;
+>>>>>>> 82cac6be1baa2caca2aad2c3a99ad4f05bdc4148
 }
 
 .custom-select select {
