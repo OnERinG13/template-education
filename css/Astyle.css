@@ -34,12 +34,15 @@ a{
 
 .pencel-img{
 	position: absolute;
-	z-index: 999; 
+	z-index: 999;
+	top: 10px;
+	transform: rotate(10deg);
 }
 
 .cloudimg{
+	width: 100px !important;
 	float:right !important;
-	bottom:5px; 
+	bottom:5px;
 }
 
 .text-nav{
@@ -236,7 +239,7 @@ a{
 	background: -moz-linear-gradient(-45deg, #612f84 1%, #612f84 4%, #23176b 4%, #23176b 100%);
 	background: -webkit-linear-gradient(-45deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
 	background: linear-gradient(150deg, #612f84 1%,#612f84 4%,#23176b 4%,#23176b 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#612f84', endColorstr='#23176b',GradientType=1 ); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#612f84', endColorstr='#23176b',GradientType=1 );
 	height:10%;
 }
 /*end content header*/
@@ -263,7 +266,7 @@ a{
 		width: 100px;
 	}
 	.cloudimg{
-		bottom: 8px; 
+		bottom: 8px;
 	}
 	.navbar-contents{
 		height: 8%;
@@ -310,7 +313,6 @@ a{
 		border-radius: none !important;
 	}
     .gradientNavbarlight{
-/*        background: linear-gradient(149.8deg, rgba(94, 44, 129, 0.88) 9.9em, rgba(228, 228, 228, 1) 0%) !important;*/
 		background-color: unset !important;
 		border: none !important;
 		border-radius: none !important;
@@ -328,18 +330,36 @@ a{
     .pencel,.sort-courses{
         top: 38.6em;
 }
-
-/*	.navbar-nav li{
-		background-color: #361D70;
-	}
-	.navbar-nav li:last-child{
-		border-bottom-width: 1px;
-		border-image-bottom: linear-gradient(149.8deg, rgba(94, 44, 129, 0.88) 10.5em, rgba(228, 228, 228, 0.35) 0%);
-	}*/
+}
+.sort-courses-select{
+	color: white;
+	float: right;
+	line-height: 30px;
+	top: 25%;
+	padding-top: 15px;
+}
+.sort-courses-select li{
+	padding: 7px;
+	color: aqua;
+	float: right;
+}
+.address-courses{
+	top: 25%;
+	float: right !important;
+}
+.address-courses li{
+	color: #aaa;
+	padding: 5px;
+	display: inline-block;
+	float: right;
+}
+.address-courses li:last-child{
+	color: #A3C439;
+}
+.address-courses li i{
+	width: 10px;
 }
 @media (max-width: 425px){
-	
-
 	.laptopsvg{
 		margin-top: 12em;
 	}
@@ -366,4 +386,66 @@ a{
 		width: 79px;
 		font-size: 10px;
 	}
+}
+/* custome select */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 150px;
+  border: 1px solid #03f2f7;
+  border-radius: 7px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  	position: absolute;
+	content: "";
+	top: 40%;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  	color: #ffffff;
+	border: 1px solid #fb522f00;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+	padding-left: 10px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/Astyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>قدم های نهایی</title>
+</head>
+<body>
+    <!--header section-->
+    <nav class="navbar navbar-inverse gradientNavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdown-menu">
+          <i class="fa fa-bars"></i>
+          </button>
+          <a href="#" class="user responsive-icon-user"><img src="img/boy.png" alt="Avatar"></a>
+          <a class="brand-education" href="#">
+            <img src="./img/logo.png">
+          </a>
+        </div>
+
+        <!-- Search form -->
+        <form class="form-search" method="post" action="#" id="search-form">
+          <i class="fa fa-search" id="search-icon"></i>
+          <input class="input-search" id="input-search">
+          <input type="submit" id="submit-search">
+        </form>
+        <!-- end search form -->
+
+          <div class="collapse navbar-collapse" id="dropdown-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">تماس با ما</a></li>
+              <li><a href="#">درباره ی ما</a></li>
+              <li><a href="#">آموزش ها</a>
+              <svg class="border-radius" width="100" height="50" style="position: absolute;top: 0;z-index: 0;">
+              <rect class="courses" x="1" y="8" rx="20" ry="20" width="85" height="35" style="fill: none;stroke: url(#gradient);stroke-width: 2px;opacity: 1;"></rect>
+              Sorry, your browser does not support inline SVG.
+              <defs>
+              <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#954DE4"></stop>
+                <stop offset="100%" stop-color="#5eaefd"></stop>
+              </linearGradient>
+              </defs>
+            </svg>
+          </li>
+          <li><a href="#">صفحه ی اصلی</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end header section -->
+
+  <!-- home content -->
+
+    <div class="owl-carousel">
+      <div><img src="img/slide1.png" alt="slide1" height="700"></div>
+      <div><img src="img/slide2.png" alt="slide2" height="700"></div>
+    </div>
+
+
+    <div class="section1-titles">
+      <h3>
+        امکاناتی که ما در اختیار شما قرار میدهیم
+      </h3>
+      <h2>
+        بیشتر از دیگران!
+      </h2>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/mortarboard.svg"><span>شامل تمامیه درس هایی که احتیاج داری</span></div>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/professor.svg"><span>اساتید حرفه ای در تمامیه دروس ارایه شده با رزومه خوب!</span></div>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/student.svg"><span>دانشجویان میتوانند با ساخت پروفایل و نمره دهی به دروس میزان محبوبیت درس را مشخص کنند</span></div>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/bell.svg"><span>یادگیری در حرفه های مختلف و افزایش مهارت خود</span></div>
+
+      <div class="clearfix"></div>
+
+      <div id="title-categories">
+        <div class="col-lg-3"><span>محبوب ترین</span><img src="img/podium.svg"></div>
+        <div class="col-lg-3"><span></span><img src="img/new.svg"></div>
+        <div class="col-lg-3"><span></span><img src="img/lock.svg"></div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="father-categories">
+        <div class="content-categories">
+          <div class="col-lg-6"><img src="img/cover.png"></div>
+          <div class="col-lg-6"><img src="img/cover.png"></div>
+          <div class="col-lg-6"><img src="img/cover.png"></div>
+          <div class="col-lg-6"><img src="img/cover.png"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <!-- end of home content -->
+  <!-- scripts -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myScript.js"></script>
+<script src="./js/footer.js"></script>
+<script src="./js/Search.js" charset="utf-8"></script>
+<script src="js/select-categories"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" charset="utf-8"></script>
+<script>
+$(document).ready(function(){
+$(".owl-carousel").owlCarousel({
+items:1,
+loop:true,
+autoplay:true,
+slideTransition:'linear',
+});
+});
+</script>
+</body>
+</html>

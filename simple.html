@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	</head>
 	<body>
-        
+
         <div>
 		<!--loader-->
 		<!--<div id="preloder">
@@ -23,7 +23,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#dropdown-menu">
 					<i class="fa fa-bars"></i>
-					
+
 					</button>
 					<a href="#" class="user responsive-icon-user"><img src="img/boy.png" alt=""></a>
 					<a class="brand-education" href="#">
@@ -73,7 +73,7 @@
 			<img class="laptopsvg" src="img/laptop.png" alt="laptop">
 		</div>
 	</div>
-   
+
     </div>
 	<!-- end content header -->
 	<!-- content navbar -->
@@ -83,18 +83,40 @@
 		</a>
 	</div>
 	<div class="sort-courses">
-		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 cloudimg">
+		<div class="col-lg-2 col-md-1 col-sm-1 col-xs-2 cloudimg">
 			<img src="./img/cloud.svg" alt="cloud">
 		</div>
-		<ul class="text-nav">
-			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-1">صفحه اصلی</li>
-			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-1">آموزش ها</li>
-			<li class="col-lg-2 col-md-2 col-sm-2 col-xs-1">برنامه نویسی اندروید</li>
+		<ul class="col-lg-5 col-md-2 col-sm-2 col-xs-1 address-courses">
+			<li> صفحه اصلی </li>
+			<li> <i class="fa fa-angle-left"></i> </li>
+			<li> آموزش ها </li>
+			<li> <i class="fa fa-angle-left"></i> </li>
+			<li> برنامه نویسی اندروید </li>
 		</ul>
+		<div class="select-and-sort">
+		<ul class="col-lg-5 col-md-2 col-sm-2 col-xs-1 sort-courses-select">
+			<li>
+				<div class="custom-select" style="width:150px;">
+				<select name="sort">
+					<option> </option>
+					<option value="name" selected>نام آموزش</option>
+					<option value="time desc">تاریخ انتشار نزولی</option>
+					<option value="time asc">تاریخ انتشار صعودی</option>
+					<option value="price desc">قیمت نزولی</option>
+					<option value="price asc">قیمت صعودی</option>
+				</select>
+			</div>
+			</li>
+			<li><img src="./img/sort.svg" alt="sort" width="20" height="20"></li>
+			<li> <i class="fa fa-angle-right"></i> </li>
+			<li>مرتب کردن بر اساس</li>
+		</ul>
+	</div>
 	</div>
 	<!-- end content navbar -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/myScript.js"></script>
+	<script src="./js/select.js"></script>
 </body>
 </html>
