@@ -31,7 +31,7 @@
 	text-align: justify;
   padding: 5px;
   background-color: deepskyblue;
-  padding: 55px 5px 0 5px;
+  padding: 55px 15px 15px 15px;
   direction: rtl;
 }
 .sp-content > div:last-child{
@@ -94,10 +94,10 @@ ul.nav li{
   float: right;
 }
 ul.edu-parts li:last-child{
-	height: 25em;
+	height: 28em;
 }
 ul.edu-comments li:last-child{
-	height: 25em;
+	height: 28em;
 }
 ul.edu-parts li{
   padding: 10px;
@@ -127,5 +127,23 @@ ul.edu-parts li{
 	}
 	.sp-content > div:first-child{
 		padding-bottom: 25px;
+	}
+}
+@media (max-width:767px) {
+	.sp-content{
+		top: 50em;
+	}
+	.address-courses{
+		font-size: 12px;
+	}
+}
+@media (max-width:370px) {
+	.sort-courses{
+		height: 115px;
+	}
+}
+@media (max-width:620px) {
+	.address-courses{
+		top: 10%;
 	}
 }
