@@ -74,29 +74,41 @@
         بیشتر از دیگران!
       </h2>
 
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/mortarboard.svg"><span>شامل تمامیه درس هایی که احتیاج داری</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/cap.svg"><span>شامل تمامیه درس هایی که احتیاج داری</span></div>
 
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/professor.svg"><span>اساتید حرفه ای در تمامیه دروس ارایه شده با رزومه خوب!</span></div>
 
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/student.svg"><span>دانشجویان میتوانند با ساخت پروفایل و نمره دهی به دروس میزان محبوبیت درس را مشخص کنند</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/graduate.svg"><span>دانشجویان میتوانند با ساخت پروفایل و نمره دهی به دروس میزان محبوبیت درس را مشخص کنند</span></div>
 
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/bell.svg"><span>یادگیری در حرفه های مختلف و افزایش مهارت خود</span></div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 gilificon"><img src="img/marker.svg"><span>یادگیری در حرفه های مختلف و افزایش مهارت خود</span></div>
 
       <div class="clearfix"></div>
 
       <div id="title-categories">
-        <div class="col-lg-3"><span>محبوب ترین</span><img src="img/podium.svg"></div>
-        <div class="col-lg-3"><span></span><img src="img/new.svg"></div>
-        <div class="col-lg-3"><span></span><img src="img/lock.svg"></div>
+        <div class="col-lg-3" id="best-button"><span>محبوب ترین</span><img src="img/podium.svg"></div>
+        <div class="col-lg-3" id="newest-button"><span>جدید ترین ها</span><img src="img/new.svg"></div>
+        <div class="col-lg-3" id="free-button"><span>رایگان ها</span><img src="img/lock.svg"></div>
         <div class="clearfix"></div>
       </div>
 
       <div class="father-categories">
-        <div class="content-categories">
+        <div class="content-categories" id="best-posts">
           <div class="col-lg-6"><img src="img/cover.png"></div>
           <div class="col-lg-6"><img src="img/cover.png"></div>
           <div class="col-lg-6"><img src="img/cover.png"></div>
           <div class="col-lg-6"><img src="img/cover.png"></div>
+        </div>
+        <div class="content-categories" id="newest-posts">
+          <div class="col-lg-6"><img src="img/profile.png"></div>
+          <div class="col-lg-6"><img src="img/profile.png"></div>
+          <div class="col-lg-6"><img src="img/profile.png"></div>
+          <div class="col-lg-6"><img src="img/profile.png"></div>
+        </div>
+        <div class="content-categories" id="free-posts">
+          <div class="col-lg-6"><img src="img/mosquitonetwork.png"></div>
+          <div class="col-lg-6"><img src="img/mosquitonetwork.png"></div>
+          <div class="col-lg-6"><img src="img/mosquitonetwork.png"></div>
+          <div class="col-lg-6"><img src="img/mosquitonetwork.png"></div>
         </div>
 
       </div>
@@ -110,7 +122,7 @@
 <script src="js/myScript.js"></script>
 <script src="./js/footer.js"></script>
 <script src="./js/Search.js" charset="utf-8"></script>
-<script src="js/select-categories"></script>
+<script src="./js/home select.js" charset="utf-8"></script>
 <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" charset="utf-8"></script>
 <script>
 $(document).ready(function(){
@@ -121,6 +133,13 @@ autoplay:true,
 slideTransition:'linear',
 });
 });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    let height = null;
+    height = $('.content-categories').height();
+    $('.father-categories').css('height',height);
+  });
 </script>
 </body>
 </html>
