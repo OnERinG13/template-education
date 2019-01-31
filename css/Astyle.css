@@ -344,6 +344,10 @@ a{
 .navbar-right a{
 	z-index: 1;
 }
+.navbar-right a:hover{
+	z-index: 1;
+	color: #5D3584 !important;
+}
 .responsive-icon-user{
 	display: none;
 }
