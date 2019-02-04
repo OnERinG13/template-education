@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+
 .section1-titles{
 	font-family: shabnam;
 	text-align: center;
@@ -78,10 +76,15 @@ html {
 	background-clip: content-box;
 	margin-bottom: 30px;
 }
-.content-categories > div > img{
+.content-categories > div > a > img{
 	max-width: 400px;
 	height: 260px;
 }
+.content-categories > div > a{
+	position: relative;
+	z-index: 999;
+}
+
 .father-categories{
 	position: relative;
 }
@@ -96,4 +99,166 @@ html {
 }
 #free-posts{
 	opacity: 0;
+}
+
+.plan-header{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+.section-plans .container{
+	margin-bottom: 20px;
+}
+.section-plans{
+  background-color: #7a0099;
+  margin-bottom: 75px ;
+}
+.plan-title{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.every-plan{
+  background-color: #ae00a6;
+  border-radius: 15px;
+}
+.every-plan > div:not(.plan-title){
+  text-align: right;
+  color: yellow;
+  font-size: 15px;
+  line-height: 35px;
+}
+.every-plan > div > i {
+  padding:0 5px 0 20px;
+}
+.submit-plan{
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  color: aqua;
+  background-color: unset;
+  border-radius: 7px;
+  border: 1px solid aqua;
+}
+.submit-plan:hover{
+  border: 1px solid transparent;
+  background-color: yellow;
+  color: black;
+
+}
+.important-text{
+  color: aqua;
+  font-weight: bolder;
+}
+.cal-section{
+  background-color: #500065;
+}
+.cal-section h2,.cal-section h3{
+  text-align: right;
+  color: #fff;
+  padding: 12px 115px 0 0px;
+}
+.cal-section h3{
+  padding-bottom: 20px;
+  color: yellow;
+}
+.cal-section > div:first-of-type{
+  margin-top: 20px;
+}
+.cal-row{
+  margin-top: 20px;
+}
+.cal-row > div:first-child{
+  bottom: 110px;
+}
+.cal-section > .row > div > img{
+  transform: rotate(180deg);
+}
+#calculator-description{
+  font-size: 20px;
+  color: white;
+  direction: rtl;
+  text-align: justify;
+  line-height: 40px;
+}
+.section2-calculator{
+	position: relative;
+	background-color: #bf207f;
+}
+.circle-cal{
+	background-color: #bf207f;
+	border-radius: 50%;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+.section2-calculator > div:last-child{
+	direction: rtl;
+}
+.section2-calculator > div:nth-child(3){
+	text-align: center;
+	top: 1em;
+}
+.section2-calculator > div:nth-child(3) > input {
+	height: 40px;
+	color: #fff;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 20px;
+}
+.section2-calculator > div:nth-child(3) > h6{
+	color: #fff;
+}
+.section2-calculator > div:last-child h3{
+	color: #000;
+}
+.section2-calculator > div:last-child h2{
+	color: yellow;
+}
+.cal-price{
+	top: 2em;
+}
+.cal-price > div {
+	height: 70px;
+	background: #ff0;
+	border-radius: 15px;
+	width: 200px;
+	position: relative;
+	text-align: center;
+	line-height: 70px;
+	font-size: 25px;
+}
+.site-stat {
+	height: 400px;
+	background: #500065;
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.site-stat > div {
+	border: 1px solid red;
+	border-radius: 10px;
+	height: 150px;
+	margin: 0 40px;
+	text-align: center;
+}
+.site-stat > div > span{
+	display: block;
+}
+.site-stat > div > span:first-child{
+	font-size: 55px;
+	color: #fff;
+}
+.site-stat > div > span:last-child{
+	font-size: 30px;
+	margin-top: 15px;
+	color: yellow;
 }
